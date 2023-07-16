@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { InicioRoutingModule } from './inicio-routing.module';
+import { SharedModule } from '@shared/shared.module';
 
 
 
@@ -9,7 +11,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     DashboardComponent
   ],
   imports: [
-    CommonModule
+    SharedModule,
+    InicioRoutingModule
   ]
 })
 export class InicioModule { }

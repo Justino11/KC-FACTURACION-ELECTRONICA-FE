@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { GestionarFacturasListaComponent } from './gestionar-facturas-lista/gestionar-facturas-lista.component';
 import { GestionarFacturasDetallesComponent } from './gestionar-facturas-detalles/gestionar-facturas-detalles.component';
+import { GestionfacturasRoutingModule } from './gestion-facturas-routing.module';
+import { SharedModule } from '@shared/shared.module';
 
 
 
@@ -11,7 +13,8 @@ import { GestionarFacturasDetallesComponent } from './gestionar-facturas-detalle
     GestionarFacturasDetallesComponent
   ],
   imports: [
-    CommonModule
+    SharedModule,
+    GestionfacturasRoutingModule
   ]
 })
 export class GestionFacturasModule { }
